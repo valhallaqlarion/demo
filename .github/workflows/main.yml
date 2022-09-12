@@ -22,4 +22,4 @@ jobs:
         uses: saadmk11/comment-webpage-screenshot@main
         with:
           upload_to: imgur
-          capture_urls: "https://coruscating-croquembouche-3eafaf.netlify.app/"
+          capture_urls: "https://aquamarine-alfajores-30244c.netlify.app/"
