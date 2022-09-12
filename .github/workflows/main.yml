@@ -1,0 +1,25 @@
+name: Comment Webpage Screenshot
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: New Deployment
+        uses: saadmk11/comment-webpage-screenshot@main
+        with:
+          upload_to: imgur
+          capture_html_file_paths: "index.html"
+          
+          
+      - name: Old Deployment
+        uses: saadmk11/comment-webpage-screenshot@main
+        with:
+          upload_to: imgur
+          capture_urls: "https://coruscating-croquembouche-3eafaf.netlify.app/"
